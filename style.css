@@ -1,0 +1,403 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+} 
+body {
+    background: #f7f7f7;
+    color: #1d1d1d;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background-color: rgb(214, 241, 229);
+  border-bottom: 2px solid #e8f0ff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #111433;
+}
+
+.logo img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111433;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b3714e; 
+  text-decoration: underline;
+}
+
+
+.signin-btn{
+  border: 2px solid #00cec9;
+  background-color: rgb(255, 255, 255);
+  color: #111433;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+   
+ .signin-btn:hover {
+    background: #36575c;
+    color: rgb(212, 226, 212);
+}
+
+
+
+
+
+
+
+
+/* HERO SECTION */
+.hero {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600') center/cover no-repeat;
+    height: 420px;
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    backdrop-filter: blur(2px);
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.hero-content h1 span {
+    color: #10c3a7;
+}
+
+.hero-content p {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+/* SEARCH BOX */
+.search-box {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search-box input {
+    width: 340px;
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.search-box button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.sale-btn {
+    background: #00d6c5;
+}
+
+.rent-btn {
+    background: #00b3ff;
+}
+
+/* SIGN IN BANNER */
+.signin-banner {
+    margin: 30px auto;
+    width: 90%;
+    background: #e8f6f3;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* CARDS */
+.cards {
+    width: 92%;
+    margin: 40px auto 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 35px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;     /* bigger image */
+    object-fit: cover;
+}
+
+/* Content inside card */
+.card h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 22px 26px 14px;
+    color: #111;
+}
+
+.card p {
+    margin: 0 26px 20px;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.55;
+}
+
+/* Card link */
+.card a {
+    display: block;
+    margin: 0 26px 28px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #0097ff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* FEATURES SECTION */
+.features {
+    width: 92%;
+    margin: 60px auto 90px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.feature-box {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.25s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* Icons */
+.feature-box i {
+    font-size: 50px;
+    margin-bottom: 18px;
+    color: #00b3b3;
+}
+
+/* Title */
+.feature-box h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+/* Description */
+.feature-box p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.55;
+    margin-bottom: 18px;
+}
+
+/* Link */
+.feature-box a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0097ff;
+    text-decoration: none;
+}
+
+.feature-box a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* Footer Container Styling */
+.site-footer {
+background-color: #f7f7f7; /* Light gray background */
+color: #444; /* Darker text color */
+padding: 40px 0; /* Vertical padding */
+border-top: 1px solid #ddd; /* Subtle top border */
+}
+
+.footer-content {
+/* Center the content and set a max width */
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+
+/* Use CSS Grid for the columns */
+display: grid;
+/* Create 6 columns with approximately proportional widths */
+/* Column 1 is wider for the app buttons, others are similar */
+grid-template-columns: 1.5fr repeat(5, 1fr);
+gap: 30px; /* Space between columns */
+}
+
+/* Column Header Styling */
+.footer-col h3 {
+font-size: 16px;
+font-weight: bold;
+color: #333; 
+margin-bottom: 15px;
+}
+
+/* Link List Styling */
+.footer-links {
+list-style: none; /* Remove bullet points */
+}
+
+.footer-links li {
+margin-bottom: 8px;
+}
+
+.footer-links a {
+color: #666; /* Gray link color */
+text-decoration: none; /* Remove underline */
+font-size: 14px;
+line-height: 1.4;
+}
+
+.footer-links a:hover {
+text-decoration: underline;
+color: #007bff; /* Example hover color */
+}
+
+/* App Download Column Specifics */
+.download-col h3 {
+margin-bottom: 20px;
+}
+
+/* Placeholder styles for app buttons - In a real app, these would be images */
+.app-store-btn, .google-play-btn {
+display: block; /* Make links block level */
+height: 40px;
+width: 135px; /* Approximate button width */
+background-color: #1c1a1a;
+color: #f3ebeb; /* Placeholder color for the buttons */
+border-radius: 5px;
+margin-bottom: 10px;
+text-indent: -9999px; /* Hide text if using an image background */
+/* In a real scenario, you'd use a background image for the button */
+}
+
+/* Rightmove Plus Button Styling */
+.rightmove-plus-btn {
+background-color: #002244; /* Dark blue background */
+color: white;
+font-weight: bold;
+padding: 10px 15px;
+border-radius: 4px;
+text-align: center;
+margin-bottom: 15px;
+font-size: 14px;
+display: inline-block; /* Adjust to content size */
+cursor: pointer;
+}
+
+/* Media Query for Responsiveness (Optional but recommended) */
+/* Stack columns on smaller screens */
+@media (max-width: 768px) {
+.footer-content {
+    /* Switch to a single column layout on mobile */
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.footer-col h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.download-col h3 {
+    margin-bottom: 15px;
+}
+
+/* Adjust app button layout for better mobile display */
+.app-store-btn, .google-play-btn {
+    display: inline-block;
+    margin-right: 15px;
+}
+}
